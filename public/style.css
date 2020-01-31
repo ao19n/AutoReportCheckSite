@@ -1,0 +1,136 @@
+html {
+  -webkit-animation: fade-in 1s;
+  animation: fade-in 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  font-size: 12pt;
+  margin: 0;
+  padding: 0;
+}
+.t {
+  color: rgba(0, 0, 255, 0.486);
+  font-size: 128pt;
+  font-weight: bold;
+  color: #f0f0f0;
+  text-align: center;
+  letter-spacing: -10px;
+}
+
+form {
+  position: relative;
+}
+
+.fm {
+  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+pre {
+  color: black;
+  font-size: 14pt;
+  line-height: 300%;
+  margin: 0px 20px 20px 0px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.result {
+  color: #3370a6;
+  margin: 20px;
+}
+.main {
+  min-height: 80vh;
+  text-align: center;
+  flex: 1 1 100%;
+  overflow-y: scroll;
+}
+
+.send {
+  margin: 30px 0px 0px 0px;
+}
+
+.formText {
+  font-weight: bold;
+  color: rgb(49, 49, 49);
+}
+
+p {
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+}
+
+input[type="text"],
+[type="password"],
+[name="month"],
+textarea {
+  background-color: transparent;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  box-shadow: none;
+  padding: 10px;
+
+  font-size: 16px;
+}
+
+input[type="text"],
+[type="password"],
+[name="month"],
+:focus,
+textarea:focus {
+  border-color: #41487e;
+  outline: 0;
+}
+
+input[name="month"] {
+  border-radius: 5px;
+  padding: 10px 30px;
+  background: #41487e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  background: #41487e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+input[type="submit"]:hover {
+  background: #1f275e;
+  transform: scale(1.1, 1.1);
+}
+footer {
+  margin: 240px 0px 0px 0px;
+  padding: 60px;
+  background-color: rgb(245, 245, 245);
+}

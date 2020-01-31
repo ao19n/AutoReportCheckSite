@@ -1,0 +1,64 @@
+.header {
+  background-color: rgb(245, 245, 245);
+  border-bottom: 10px solid rgb(230, 230, 230);
+  margin-bottom: 100px;
+}
+
+body {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #d7fbfb54;
+}
+
+.header ul {
+  width: 100%;
+  margin: 0 auto;
+  height: 110px;
+  text-align: center;
+  list-style: none;
+}
+
+.list {
+  display: inline-block;
+}
+
+li a {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: #272727;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 110px;
+  margin: 0px 30px;
+  padding-top: 60px;
+  padding: 0 10px;
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
+}
+a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 5px;
+  background-color: #25383b;
+  transition: 0.3s;
+}
+a:hover::after {
+  width: 100%;
+}
+
+.icon {
+  display: inline-block;
+  margin: 0;
+  float: left;
+}
+
+.btn {
+  height: 75px;
+}

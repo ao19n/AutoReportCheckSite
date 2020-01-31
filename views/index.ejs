@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title><%=title %></title>
+    <link type="text/css" rel="stylesheet" href="./style.css" />
+    <link type="text/css" rel="stylesheet" href="./header.css" />
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:900|Noto+Sans+JP:500&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="header">
+      <li class="icon"><img src="/favicon.ico" width="110" height="110"></li>
+      <ul>
+        <li class ="list"><a href="https://nnn.ed.jp/" class="btn" target="_blank">N高サイト</a></li>
+        <li class ="list"><a href="https://secure.nnn.ed.jp/mypage/"class="btn" target="_blank">N高生徒用</a></li>
+        <li class ="list"><a href="https://sites.google.com/nnn.ac.jp/curriculum/"class ="btn" target="_blank">通学コース総合</a></li>
+        <li class ="list"><a href="https://sites.google.com/nnn.ac.jp/programming/"class ="btn" target="_blank">プログラミング</a></li> 
+      </ul>
+    </div>
+    <div class="main" role="main">
+      <form action="/" method="post">
+        <p class ="fm">
+          <p class = "formText">学籍番号</p>
+          <input type="text" name="id" id="id" required/>
+          <p class = "formText">パスワード</p>
+          <input type="password" name="pw" id="pw" required/><br>
+          <p class = "formText">月</p>
+          <select name="month" id="month">
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="all">all</option>
+            </select><br>
+          <input class = "send" type="submit" value="送信" />
+        </p>
+      </form>
+      <pre class="result"><%-content %></pre>
+    <footer>
+      <p>
+        © 2020 ao_19n1102237@nnn.ed.jp
+      </p>
+    </footer>
+  </body>
+</html>
