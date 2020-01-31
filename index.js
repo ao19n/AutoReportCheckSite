@@ -129,7 +129,6 @@ function judge(result) {
       //6月から12月までのループ
       for (let i = 0; i < subject.length; i++) {
         let sum = 0;
-        // let sum1 = 0;
         let count = 0;
         let test = false;
         for (let index = 0; index < reportNum; index++) {
