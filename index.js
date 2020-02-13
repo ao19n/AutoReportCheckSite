@@ -112,7 +112,7 @@ function getSubject(result) {
         .text()
     );
   }
-  return progress;
+  return progress.splice(0, progress.length - 2);
 }
 
 function judge(result) {
