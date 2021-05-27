@@ -33,7 +33,7 @@ app.post("/", (req, res) => {
       });
     });
 });
-var server = app.listen(19132, () => {
+var server = app.listen(process.env.PORT || 3000, () => {
   console.log("Server is running!");
 });
 function getReport(id, pw) {
