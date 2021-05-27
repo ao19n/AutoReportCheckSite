@@ -18,7 +18,6 @@ var month1;
 // ※POST送信の処理
 app.post("/", (req, res) => {
   month1 = req.body["month"];
-  console.log(req.body.id + ":" + req.body.pw);
   getReport(req.body.id, req.body.pw)
     .then(function(value) {
       res.render("index.ejs", {
